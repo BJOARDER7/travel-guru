@@ -9,9 +9,7 @@ body {
   margin: 24px 64px;
   font-family: "Mulish", sans-serif;
 }
-.hidden{
-  display: none;
-}
+
 /* nav menu section css */
 .nav-container {
   display: flex;
@@ -282,6 +280,48 @@ li {
   font-size: 32px;
   font-weight: 800;
 }
+
+/* extra section */
+@keyframes extra {
+  0%{
+    left: 0;
+    top: 0;
+  }
+  25%{
+    left: 7rem;
+    top: -2rem;
+  }
+  50%{
+    left: 14rem;
+    top: -2rem;
+  }
+  75%{
+    left: 20rem;
+    top: -2rem;
+  }
+  100%{
+    left: 32rem;
+    top: 0;
+  }
+}
+.extra-container{
+  display: flex;  
+  align-items: center;
+  margin: 24px 0;  
+}
+.extra-img1{
+  flex-grow: 1;
+  padding-left: 24px;
+  position: relative;
+  animation: extra 3s ease-in-out 1s infinite forwards;
+}
+
+.extra-img{
+  width: 40%;
+  height: 120px;
+  border-radius: 8px;
+}
+
 /* footer section css */
 footer {
   margin: 48px 0;
@@ -518,5 +558,11 @@ footer {
 .all-right{
   margin: 8px;
 }
+/* responsive extra section css */
+.extra-container{  
+  display: none;  
+}
+
+
 
 }
